@@ -31,9 +31,9 @@ defmodule TicTacToe.Game do
     }
   end
 
-  def change_player("X"), do: "O"
-  def change_player("O"), do: "X"
-  def change_player(other), do: throw("Invalid player: #{other}")
+  defp change_player("X"), do: "O"
+  defp change_player("O"), do: "X"
+  defp change_player(other), do: throw("Invalid player: #{other}")
 
   def board_to_string(game = %TicTacToe.Game{}) do
     board = game.board

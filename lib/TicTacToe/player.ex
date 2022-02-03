@@ -1,4 +1,4 @@
-defmodule TicTacToe do
+defmodule TicTacToe.Player do
   def play do
     clear_screen()
     play(TicTacToe.Game.new())
